@@ -20,7 +20,7 @@ Do not forget to check that the browser is allowed to use Web Bluetooth API, for
 chrome://flags/#enable-experimental-web-platform-features
 ```
 
-You can use [demo](#) or local server.
+You can use [demo](https://xpunsterx.github.io/poweredup-js-demo/) or local server.
 
 To run on a local server:
 ```
