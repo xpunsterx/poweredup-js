@@ -1,0 +1,73 @@
+.port-controls {
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.port-control-item {
+    padding: 20px 30px 40px;
+
+    border-radius: 10px;
+    background: #575757;
+
+    &:not(:first-child) {
+        margin: 10px 0 0;
+    }
+
+    &_active {
+
+    }
+
+    &__header {
+        margin: 0 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin: 0;
+
+        white-space: nowrap;
+        font-size: 25px;
+    }
+
+    &__controls {
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.input-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__text {
+        $size: 40px;
+
+        box-sizing: border-box;
+        width: 100px;
+        height: $size;
+        line-height: $size;
+        border: 2px solid #424242;
+
+        border-radius: $size / 2;
+        background: #c4c4c4;
+        text-align: center;
+        outline: none;
+        font-size: 20px;
+
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        &:focus {
+            box-shadow: inset 0 0 3px 0 rgba(0,0,0,.5), 0 0 5px 0 #fff;
+        }
+    }
+}

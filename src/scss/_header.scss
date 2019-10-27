@@ -1,0 +1,47 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ble-state {
+    cursor: pointer;
+
+    &__icon {
+        width: 30px;
+    }
+}
+
+.device-state {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_connected {
+        .device-state__icon {
+            border-color: #009119;
+            background: #00d724;
+        }
+    }
+
+    &_disconnected {
+        .device-state__icon {
+            border-color: #970002;
+            background: #dd0c00;
+        }
+    }
+
+    &__text {
+
+    }
+
+    &__icon {
+        margin-left: 5px;
+        border: 3px solid;
+        width: 15px;
+        height: 15px;
+
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,51 @@
+.programmable-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.programmable-control-item {
+    &__btn {
+        &[disabled] {
+            .programmable-control-item__icon {
+                opacity: .5;
+            }
+        }
+    }
+
+    &__icon {
+        display: block;
+
+        &_play {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 8px 0 8px 14px;
+            border-color: transparent transparent transparent #fff;
+        }
+
+        &_stop {
+            width: 14px;
+            height: 14px;
+
+            background: #fff;
+        }
+
+        &_pause {
+            width: 10px;
+            height: 14px;
+            border-left: 3px solid;
+            border-right: 3px solid;
+            border-color: #fff;
+        }
+
+        &_repeat {
+            margin-top: 2px;
+        }
+    }
+}
+

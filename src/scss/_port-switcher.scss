@@ -1,0 +1,35 @@
+.port-switcher {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.port-switcher-item {
+    margin: 0 20px;
+    padding-top: 10px;
+
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &__img {
+        &:nth-child(2) {
+            margin-left: 10px;
+        }
+    }
+
+    &__text {
+        margin: 0;
+
+        font-size: 20px;
+    }
+}
