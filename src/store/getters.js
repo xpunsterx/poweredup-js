@@ -1,10 +1,10 @@
-import Buffer from  'buffer';
+import { Buffer } from  'buffer';
 
 export default {
   characteristicMessage: () => {
     return (id, value) => {
-      let data = Buffer.Buffer.from([0x81, id, 0x11, 0x60, 0x00, value, 0x00, 0x00]);
-      let message = Buffer.Buffer.concat([Buffer.Buffer.alloc(2), data]);
+      let data = Buffer.from([0x81, id, 0x11, 0x51, 0x00, value]);
+      let message = Buffer.concat([Buffer.alloc(2), data]);
       message[0] = message.length;
 
       return message;

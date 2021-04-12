@@ -28,12 +28,6 @@ export default {
       name: 'B',
       isActive: false,
       value: 0
-    },
-    {
-      id: 57,
-      name: 'AB',
-      isActive: false,
-      value: 0
     }
   ],
   timeLine: [],
