@@ -68,7 +68,6 @@ export default {
       this.$store.dispatch('repeatToggle');
     },
     onPlayIterationEnd() {
-      console.log('done');
       if (this.player.isRepeat && this.player.isPlay) {
         this.playProcess();
       } else {
@@ -96,9 +95,7 @@ export default {
         value: item.value
       });
 
-      console.log('start', item.duration);
       await this.delayItem(item.duration);
-      console.log('end', item.duration);
 
       if (this.player.isPlay) {
         const index = this.stepIndexById(item.id) + 1 < this.timeLine.length ? this.stepIndexById(item.id) + 1 : 0;
